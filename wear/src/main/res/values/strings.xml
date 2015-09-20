@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name">WatchDemo</string>
+	<string name="hello_round">Hello Round World!</string>
+	<string name="hello_square">Hello Square World!</string>
+	<string name="box_set">Hello Boxset Layout</string>
+	<string name="hello_watchviewstub">Hello Watchview Stub</string>
+	<string name="hello_boxset">Hello Boxset</string>
+	<string name="hello_card">Hello Card</string>
+	<array name="wear_list">
+		<item>List1</item>
+		<item>List2</item>
+		<item>List3</item>
+		<item>List4</item>
+		<item>List5</item>
+	</array>
+</resources>

@@ -5,6 +5,7 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.support.wearable.view.FragmentGridPagerAdapter;
 
+import com.capitalone.watchdemo.fragments.FifthFragment;
 import com.capitalone.watchdemo.fragments.FirstFragment;
 import com.capitalone.watchdemo.fragments.ForthFragment;
 import com.capitalone.watchdemo.fragments.SecondFragment;
@@ -44,6 +45,8 @@ public class GridPagerAdapter extends FragmentGridPagerAdapter {
 			switch (column) {
 				case 0:
 					return new ForthFragment();
+				case 1:
+					return new FifthFragment();
 			}
 			break;
 		}
@@ -70,7 +73,7 @@ public class GridPagerAdapter extends FragmentGridPagerAdapter {
 			case 0:
 				return 3;
 			case 1:
-				return 1;
+				return 2;
 		}
 		return 3;
 	}

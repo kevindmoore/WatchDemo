@@ -38,8 +38,8 @@ public class FirstFragment extends Fragment {
 		stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
 			@Override
 			public void onLayoutInflated(WatchViewStub stub) {
-				mTextView = (TextView) stub.findViewById(R.id.text);
-				mTextView.setText(R.string.hello_watchviewstub);
+//				mTextView = (TextView) stub.findViewById(R.id.text);
+//				mTextView.setText(R.string.hello_watchviewstub);
 			}
 		});
 		return layout;

@@ -4,12 +4,6 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.support.wearable.view.FragmentGridPagerAdapter;
-
-import com.capitalone.watchdemo.fragments.FifthFragment;
-import com.capitalone.watchdemo.fragments.FirstFragment;
-import com.capitalone.watchdemo.fragments.ForthFragment;
-import com.capitalone.watchdemo.fragments.SecondFragment;
-import com.capitalone.watchdemo.fragments.ThirdFragment;
 /**
  * GridPager Adapter for Main activity
  */
@@ -30,6 +24,10 @@ public class GridPagerAdapter extends FragmentGridPagerAdapter {
 	 */
 	@Override
 	public Fragment getFragment(int row, int column) {
+		return null;
+	}
+
+	/*
 		switch (row) {
 			case 0:
 			switch (column) {
@@ -50,16 +48,15 @@ public class GridPagerAdapter extends FragmentGridPagerAdapter {
 			}
 			break;
 		}
-		return null;
-	}
 
+	 */
 	/**
 	 * This is the number of rows in the grid
 	 * @return
 	 */
 	@Override
 	public int getRowCount() {
-		return 2;
+		return 1;
 	}
 
 	/**
@@ -69,12 +66,16 @@ public class GridPagerAdapter extends FragmentGridPagerAdapter {
 	 */
 	@Override
 	public int getColumnCount(int row) {
-		switch (row) {
+		return 1;
+	}
+	/*
+			switch (row) {
 			case 0:
 				return 3;
 			case 1:
 				return 2;
 		}
 		return 3;
-	}
+
+	 */
 }

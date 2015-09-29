@@ -32,6 +32,10 @@ public class SecondFragment extends Fragment {
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		return inflater.inflate(R.layout.activity_main, container, false);
+	}
+
+	/*
 		ViewGroup layout = (ViewGroup) inflater.inflate(R.layout.boxset, container, false);
 		if (color != 0) {
 			layout.setBackgroundColor(color);
@@ -40,5 +44,6 @@ public class SecondFragment extends Fragment {
 		}
 		((TextView)layout.findViewById(R.id.text)).setText(R.string.hello_boxset);
 		return layout;
-	}
+
+	 */
 }

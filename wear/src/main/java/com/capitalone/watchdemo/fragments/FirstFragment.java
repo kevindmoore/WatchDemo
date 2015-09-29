@@ -30,6 +30,7 @@ public class FirstFragment extends Fragment {
 		return inflater.inflate(R.layout.activity_main, container, false);
 	}
 	/*
+		ViewGroup layout = (ViewGroup) inflater.inflate(R.layout.first_layout, container, false);
 		if (color != 0) {
 			layout.setBackgroundColor(color);
 		} else {
@@ -43,6 +44,7 @@ public class FirstFragment extends Fragment {
 				mTextView.setText(R.string.hello_watchviewstub);
 			}
 		});
+		return layout;
 
 	 */
 }

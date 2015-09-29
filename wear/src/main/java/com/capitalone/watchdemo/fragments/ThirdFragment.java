@@ -25,7 +25,7 @@ public class ThirdFragment extends CardFragment {
 	@Override
 	public View onCreateContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		ViewGroup layout = (ViewGroup) super.onCreateContentView(inflater, container, savedInstanceState);
-		layout.setBackgroundColor(getActivity().getResources().getColor(android.R.color.holo_red_dark));
+		layout.setBackgroundColor(getActivity().getResources().getColor(android.R.color.black));
 		((TextView)layout.findViewById(R.id.title)).setText(R.string.hello_card);
 		return layout;
 	}

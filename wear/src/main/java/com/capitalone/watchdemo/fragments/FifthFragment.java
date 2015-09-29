@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.capitalone.watchdemo.R;
 /**
@@ -14,17 +13,10 @@ import com.capitalone.watchdemo.R;
  */
 public class FifthFragment extends Fragment {
 
-	private TextView mTextView;
-
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.activity_main, container, false);
-
-	}
-	/*
 		ViewGroup layout = (ViewGroup) inflater.inflate(R.layout.circle, container, false);
 		return layout;
-
-	 */
+	}
 }

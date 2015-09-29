@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.capitalone.watchdemo.R;
+import com.capitalone.watchdemo.WearableAdapter;
 /**
  * Fragment used to show a WearableListView
  */
@@ -21,10 +22,6 @@ public class ForthFragment extends Fragment implements WearableListView.ClickLis
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.activity_main, container, false);
-	}
-
-	/*
 		ViewGroup layout = (ViewGroup) inflater.inflate(R.layout.wearablelist, container, false);
 		WearableListView listView = (WearableListView) layout.findViewById(R.id.wearableList);
 		// Set up the adapter
@@ -32,8 +29,8 @@ public class ForthFragment extends Fragment implements WearableListView.ClickLis
 		// If we need to do something when clicking on an item
 		listView.setClickListener(this);
 		return layout;
+	}
 
-	 */
 	/**
 	 * Handle click on list element
 	 * @param v

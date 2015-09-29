@@ -3,6 +3,7 @@ package com.capitalone.watchdemo.fragments;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.wearable.view.WatchViewStub;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,9 +28,7 @@ public class FirstFragment extends Fragment {
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.activity_main, container, false);
-	}
-	/*
+		ViewGroup layout = (ViewGroup) inflater.inflate(R.layout.first_layout, container, false);
 		if (color != 0) {
 			layout.setBackgroundColor(color);
 		} else {
@@ -43,6 +42,6 @@ public class FirstFragment extends Fragment {
 				mTextView.setText(R.string.hello_watchviewstub);
 			}
 		});
-
-	 */
+		return layout;
+	}
 }

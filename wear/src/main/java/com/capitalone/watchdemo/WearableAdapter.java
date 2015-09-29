@@ -11,17 +11,14 @@ import android.widget.TextView;
 public class WearableAdapter extends WearableListView.Adapter {
 	private final Context mContext;
 	private final LayoutInflater mInflater;
-//	private final String[] strings;
+	private final String[] strings;
 
-	private WearableAdapter(Context context) {
+	public WearableAdapter(Context context) {
 		mContext = context;
 		mInflater = LayoutInflater.from(context);
+		strings = mContext.getResources().getStringArray(R.array.wear_list);
 	}
 
-	/*
-			strings = mContext.getResources().getStringArray(R.array.wear_list);
-
-	 */
 	/**
 	 * Create the view holder with the inflated view
 	 * @param parent
@@ -42,14 +39,13 @@ public class WearableAdapter extends WearableListView.Adapter {
 	@Override
 	public void onBindViewHolder(WearableListView.ViewHolder holder, int position) {
 		TextView view = (TextView) holder.itemView.findViewById(R.id.text);
-//		view.setText(strings[position]);
+		view.setText(strings[position]);
 		holder.itemView.setTag(position);
 	}
 
 	@Override
 	public int getItemCount() {
-		return 0;
+		return strings.length;
 	}
-	// 		return strings.length;
 
 }
